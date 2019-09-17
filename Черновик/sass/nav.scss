@@ -1,0 +1,51 @@
+.header {
+
+}
+
+.navigation {
+	min-height: 50px;
+	border-bottom: 1px solid #f4f4f4;
+	display: flex;
+	align-items: center;
+
+	&__number {
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.14px;
+	}
+
+	&__a-cont {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__a {
+		color: $black;
+		text-decoration: none;
+		font-weight: 500;
+		font-size: 14px;
+		letter-spacing: 0.14px;
+		transition: $all-03	;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	&__btn {
+		height: 30px;
+		width: 140px;
+		font-size: 12px;
+		font-weight: 700;
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.menu-svg {
+	width: 30px;
+	height: 30px;
+}

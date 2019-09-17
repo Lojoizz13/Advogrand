@@ -1,0 +1,17 @@
+@import 'var';
+@import 'base';
+@import 'nav';
+@import 'header-block1';
+@import 'header-block2';
+@import 'services';
+@import 'about';
+@import 'how';
+@import 'advantage';
+@import 'want';
+@import 'rate';
+@import 'formContacts';
+@import 'footer';
+
+.required {
+	border-color: $red;
+}

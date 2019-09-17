@@ -1,0 +1,39 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+p, h1, h2, h3 {
+	margin: 0;
+}
+
+.btn {
+	border-radius: $border-radius;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: $all-03;
+
+	&__red {
+		color: $white;
+		background-color: $red;
+
+		&:hover {
+			background-color: darken($red, 10%);
+		}
+	}
+}
+
+.h2 {
+	font-size: 30px;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 0.3px;
+	&-black {
+		color: $black;
+	}
+
+	&-white {
+		color: $white;
+	}
+}

@@ -1,0 +1,68 @@
+.header-block1 {
+	min-height: 80px;
+	display: flex;
+	align-items: center;
+
+
+	&__logo {
+		
+	}
+
+	&__p {
+		text-align: center;
+		font-size: 14px;
+		letter-spacing: 0.14px;
+	}
+
+	&__num-cont {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	&__num {
+		font-size: 18px;
+		letter-spacing: 0.18px;	
+		font-weight: 700;
+		margin-right: 30px;
+	}
+}
+
+.red-icon-box {
+	height: 40px;
+	width: 40px;
+	border: 1px solid $red;
+	border-radius: $border-radius;
+	cursor: pointer;
+	transition: $all-03;
+
+	&:hover {
+		border-color: $black;
+
+		.red-icon-box__path {
+			fill: $black;
+		}
+	}
+
+	&__a {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: $all-03;
+	}
+
+	&__svg {
+		width: 30px;
+		height: 30px;	
+	}
+
+	&__path {
+		transition: $all-03;
+	}
+}
+
+.red-icon-box1 {
+	margin-right: 10px;
+}

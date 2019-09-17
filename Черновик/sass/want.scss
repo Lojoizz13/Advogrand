@@ -1,0 +1,106 @@
+.want {
+	background-image: url("../img/bg3.jpg");
+	background-size: cover;
+	padding: 100px 0;
+	color: $white;
+	position: relative;
+
+	&__h2 {
+		text-align: left;
+		margin-bottom: 75px;
+	}
+
+	&__text {
+		display: flex;
+		margin-bottom: 30px;
+	}
+
+	&__span {
+		font-size: 18px;
+		font-weight: 500;
+		color: $red;
+	}
+
+	&__p {
+		font-size: 18px;
+		font-weight: 300;
+		margin-left: 20px;
+	}
+
+	&__a {
+		color: $white;
+		transition: $all-03;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	&__googlePlay {
+		position: absolute;
+		left: 730px;
+		top: 45px;
+	}
+
+	&__appStore {
+		position: absolute;
+		left: 730px;
+		top: 150px;
+	}
+}
+
+@media (max-width: 991.98px) { 
+	.want {
+		padding-bottom: 160px;
+	}
+
+	.want__appStore {
+		left: 280px;
+		top: 320px;
+	}
+
+	.want__googlePlay {
+		left: 50px;
+		top: 320px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.want__appStore {
+		left: 280px;
+		top: 370px;
+	}
+
+	.want__googlePlay {
+		left: 50px;
+		top: 370px;
+	}
+}
+
+@media (max-width: 546px) {
+	.want__appStore {
+		left: 280px;
+		top: 450px;
+	}
+
+	.want__googlePlay {
+		left: 50px;
+		top: 450px;
+	}
+}
+
+@media (max-width: 516px) {
+	.want {
+		padding-bottom: 200px;
+	}
+
+	.want__appStore {
+		left: 50px;
+		top: 540px;
+	}
+
+	.want__googlePlay {
+		left: 50px;
+		top: 450px;
+	}
+}
