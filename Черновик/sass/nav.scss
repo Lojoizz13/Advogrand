@@ -1,7 +1,3 @@
-.header {
-
-}
-
 .navigation {
 	min-height: 50px;
 	border-bottom: 1px solid #f4f4f4;
@@ -48,4 +44,93 @@
 .menu-svg {
 	width: 30px;
 	height: 30px;
+	cursor: pointer;
+}
+
+//Меню
+.menu {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	background-color: white;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	z-index: 100;
+	padding-top: 30px;
+	padding-left: 30px;
+	display: none;
+
+	&__a {
+		text-decoration: none;
+		color: $black;
+		font-size: 40px;
+		margin-bottom: 20px;
+
+		transition: $all-03	;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	.close {
+		width: 60px;
+		position: absolute;
+		right: 30px;
+		outline: none;
+	}
+}
+
+.menu-animation-open {
+	display: flex;
+	animation-name: menu-open;
+	animation-duration: 1s;
+}
+
+.menu-animation-close {
+	animation-name: menu-close;
+	animation-duration: 1s;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+@keyframes menu-open {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes menu-close {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@media (max-width: 991.98px) {
+	.menu__a4 {
+		display: none;
+	}
+}
+
+@media (max-width: 500px) {
+	.menu__a {
+		font-size: 24px;
+	}
+
+	.close {
+		height: 40px;
+	}
 }
